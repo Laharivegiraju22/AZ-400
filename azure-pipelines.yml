@@ -10,10 +10,10 @@ pool:
   vmImage: ubuntu-latest
 
 variables:
-  path: './print.sh'
+  filepath: './print.sh'
 
 steps:
 - task: Bash@3
   inputs:
-    filePath: '$(path)'
+    filePath: '$(filepath)'
 
